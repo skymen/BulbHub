@@ -5,25 +5,38 @@
   "author": "Quentin Goinaud <armaldio@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "PORT=4444 nuxt",
+    "dev": "cross-env PORT=4445 nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "api": "nodemon --watch api api/index.js"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "joi": "^13.2.0",
+    "lowdb": "^1.0.0",
+    "marked": "^0.3.19",
     "nuxt": "^1.0.0",
+    "restify": "^7.1.1",
+    "restify-cors-middleware": "^1.1.0",
+    "vue": "^2.5.16",
     "vuetify": "^1.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
+    "cross-env": "^5.1.4",
     "eslint": "^4.3.0",
+    "eslint-config-airbnb": "^16.1.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-loader": "^1.9.0",
     "eslint-plugin-html": "^3.1.1",
     "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.7.0",
     "eslint-plugin-standard": "^3.0.1",
+    "nodemon": "^1.17.3",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1"
   }

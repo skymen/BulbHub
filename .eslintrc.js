@@ -1,16 +1,21 @@
 module.exports = {
-  root: true,
-  parser: 'babel-eslint',
-  env: {
+  root   : true,
+  parser : 'babel-eslint',
+  env    : {
     browser: true,
-    node: true
+    node   : true
   },
-  extends: 'standard',
+  extends: 'airbnb',
   // required to lint *.vue files
   plugins: [
     'html'
   ],
   // add your custom rules here
-  rules: {},
+  rules  : {
+    'import/no-extraneous-dependencies': ['error', {
+      'devDependencies'     : true,
+      'optionalDependencies': true
+    }],
+  },
   globals: {}
-}
+};

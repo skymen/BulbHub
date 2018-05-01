@@ -1,9 +1,3 @@
-export const state = () => ({
-  sidebar: false
-})
+export const state = () => ({});
 
-export const mutations = {
-  toggleSidebar (state) {
-    state.sidebar = !state.sidebar
-  }
-}
+export const mutations = {};
