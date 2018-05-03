@@ -1,0 +1,32 @@
+swagger: "2.0"
+
+info:
+  version: 1.0.0
+  title: BulbHub API
+  description: The API of the BulbHub project
+
+schemes:
+  - https
+host: localhost
+basePath: /api/v1
+
+paths:
+  /ideas:
+    get:
+      summary: Get a list of ideas
+      description: Returns a list containing all ideas.
+      responses:
+        200:
+          description: A list of Ideas
+          schema:
+            type: array
+            items:
+              properties:
+                title:
+                  type: string
+                description:
+                  type: string
+                vote_up:
+                  type: number
+                vote_down:
+                  type: number

@@ -1,0 +1,17 @@
+{
+  "name": "bulbhub-api",
+  "version": "0.0.1",
+  "description": "Backend API for BulbHub websites",
+  "main": "index.js",
+  "scripts": {
+    "run": "node index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "joi": "^13.2.0",
+    "lowdb": "^1.0.0",
+    "restify": "^7.1.1",
+    "restify-cors-middleware": "^1.1.0"
+  }
+}
