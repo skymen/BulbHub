@@ -1,3 +1,5 @@
+<p align="center"><img src="logo/BHV.png" alt="BulbHub" height="200px"></p>
+
 # bulbhub
 
 > An open source idea voting system for your github repository
